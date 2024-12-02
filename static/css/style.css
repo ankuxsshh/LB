@@ -214,8 +214,8 @@ body {
   position: relative;
   color: #ffffff !important;
   border: 1px solid transparent;
+  transition: color 0.3s ease-in-out; /* Added smooth transition for text color */
 }
-
 
 .navTabs::after {
   content: "";
@@ -225,7 +225,13 @@ body {
   width: 0;
   height: 2px;
   background-color: rgba(0, 0, 0, 0);
-  transition: width 0.3s ease-in-out;
+  transform: translateY(-6px) rotateX(6deg) rotateY(6deg); /* Apply 3D effect on text */
+}
+
+.navTabs:hover {
+  color: #dddddd !important; /* Change text color on hover */
+  font-size: 16px;
+  transform: translateY(-6px) rotateX(6deg) rotateY(6deg); /* Apply 3D effect on text */
 }
 
 .navTabs:hover::after {
@@ -233,8 +239,7 @@ body {
 }
 
 .navTabs.active {
-  color: #75D457 !important;
-  /* add this rule to change text color to black on active state */
+  color: #75D457 !important; /* Retain active tab color */
 }
 
 .navButton {
@@ -456,7 +461,6 @@ body {
 .dropdown-menu {
   min-width: auto;
 }
-
 
 .dropdown-item.custom-dropdown-item {
   background-color: transparent;
@@ -724,7 +728,7 @@ div[role="progressbar"]::before {
 }
 
 .custom-h4 {
-  font-size: 16px;
+  font-size: 15px;
   text-align: right;
 }
 
