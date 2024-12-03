@@ -95,6 +95,95 @@
         });
     }
 </script>
-
+<style>
+    /** WhatsApp and Call Buttons ***/
+.btn-whatsapp-pulse {
+    background: #22dd67;
+    color: white;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 25px;
+    text-decoration: none;
+    /* Ensure no underline by default */
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transition: transform 0.3s;
+    border: 2px solid white;
+    /* Smooth scaling effect on hover */
+  }
+  
+  /* Call Icon Styling */
+  .call-icon:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+    text-decoration: none;
+    /* Remove underline */
+    color: white;
+  }
+  
+  /* WhatsApp Icon Styling */
+  .whatsapp-icon:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+    text-decoration: none;
+    /* Remove underline */
+  }
+  
+  /* Animation for the Border Effect */
+  .btn-whatsapp-pulse-border {
+    bottom: 110px;
+    right: 30px;
+    animation-play-state: paused;
+  }
+  
+  .btn-whatsapp-pulse-border::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 25px;
+    border: 5px solid #25d366;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+  
+    80% {
+      box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      padding: 25px;
+      opacity: 0.75;
+    }
+  
+    75% {
+      padding: 50px;
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+</style>
 </body>
 </html>
