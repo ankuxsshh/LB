@@ -2,9 +2,7 @@
 {% block title %}Home | L B Certifications Pvt. Ltd{% endblock %}ckground
 {% block content %}
 
-<!--    NAVS & TABS-->
-
-<!-- HTML -->
+<!-- NAVS & TABS -->
 <ul class="nav border-0 headerNav" id="myTab" role="tablist" style="background-color: #0C334A;">
   <li class="nav-item p-2" role="presentation">
     <p class="nav-link navTabs active p-3" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Individuals</p>
@@ -15,15 +13,20 @@
   <li class="nav-item p-2" role="presentation">
     <p class="nav-link navTabs p-3" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">For Governments</p>
   </li>
-  <li class="nav-item navItem1 p-3 ms-auto">
-    <div class="searchBox">
-      <input class="searchInput" type="text" name="" placeholder="Search">
-      <button class="searchButton" href="#">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-    </div>
+  
+  <!-- Dropdown for mobile view -->
+  <li class="nav-item dropdown ms-auto d-block d-md-none">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Menu
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="#" data-bs-toggle="tab" data-bs-target="#home-tab-pane">Individuals</a></li>
+      <li><a class="dropdown-item" href="#" data-bs-toggle="tab" data-bs-target="#profile-tab-pane">For Businesses</a></li>
+      <li><a class="dropdown-item" href="#" data-bs-toggle="tab" data-bs-target="#contact-tab-pane">For Governments</a></li>
+    </ul>
   </li>
 </ul>
+
 
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
@@ -73,7 +76,6 @@
                       </div>
                   </div>
               </div>
-  
           </div>
   
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -151,8 +153,7 @@
                                 <h5 class="card-title fw-bold">NEBOSH International General Certificate</h5>
                             </div>
                             <div class="text-end" style="margin: 20px;">
-                                <button type="button" class="btn enrollBtn">Enroll Now &nbsp;<span
-                                        class="fw-bold"><i class='bx bx-right-arrow-alt'></i></span></button>
+                                <button type="button" class="btn enrollBtn">Enroll Now &nbsp;<span class="fw-bold"><i class='bx bx-right-arrow-alt'></i></span></button>
                             </div>
                         </div>
                     </div>
@@ -162,55 +163,41 @@
     </div>
   </section>
 
-  <section>
-    <div class="container-fluid mb-5" data-aos="fade-up" data-aos-duration="1000">
-      <div class="card rounded-4 border-0">
-        <div class="container-fluid">
-          <div class="row row-cols-1 row-cols-md-2 g-0 p-5">
-            <div class="col-md-3 d-flex justify-content-center align-items-center">
-              <div class="card bg-transparent border-0">
-                <div class="card-body text-center">
-                  <h3 class="card-title" style="color: #0C334A">Internationally</h3>
-                  <h3 class="card-title" style="color: #0C334A">Accredited By</h3>
-                </div>
+  <section class="mb-5">
+    <div class="container-fluid">
+      <div 
+        class="card rounded-4 pt-5 pb-5 border-0 position-relative"
+        style="overflow: hidden;">
+        <!-- Adding a pseudo-element for opacity control -->
+        <div 
+          class="background-overlay position-absolute w-100 h-100" 
+          style="
+            background-image: url('static/images/cardbg.png'); 
+            background-repeat: repeat; 
+            background-size: 30px 30px; 
+            opacity: 0.1; 
+            top: 0; 
+            left: 0; 
+            z-index: 0;">
+        </div>
+        <div class="container position-relative" data-aos="fade-up" data-aos-duration="1000" style="z-index: 1;">
+          <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Internationally Accredited By</h2>
+          <div class="owl-carousel owl-theme carousel-3">
+            <div class="item p-3">
+              <div class="card bg-transparent" style="border-radius: 10px; border: none;">
+                <div class="clientImage" style="background-image: url('static/images/9.webp');"></div>
               </div>
             </div>
-            <div class="col-md-9">
-              <div class="card rounded-4 border-0">
-                <div class="owl-carousel owl-theme carousel-1">
-                  <div class="item p-3">
-                    <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                      <img src="static/images/9.webp" class="card-img-top rounded-4" alt="...">
-                    </div>
-                  </div>
-                  <div class="item p-3">
-                    <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                      <img src="static/images/9.webp" class="card-img-top rounded-4" alt="...">
-                    </div>
-                  </div>
-                  <div class="item p-3">
-                    <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                      <img src="static/images/9.webp" class="card-img-top rounded-4" alt="...">
-                    </div>
-                  </div>
-                  <div class="item p-3">
-                    <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                      <img src="static/images/9.webp" class="card-img-top rounded-4" alt="...">
-                    </div>
-                  </div>
-                  <div class="item p-3">
-                    <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                      <img src="static/images/9.webp" class="card-img-top rounded-4" alt="...">
-                    </div>
-                  </div>
-                </div>
+            <div class="item p-3">
+              <div class="card bg-transparent" style="border-radius: 10px; border: none;">
+                <div class="clientImage" style="background-image: url('static/images/9.webp');"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>    
+  </section>
 
         <section>
           <div class="container-fluid position-relative">
@@ -228,7 +215,6 @@
                        background-repeat: no-repeat;
                        opacity: 0.06; 
                        top: 0;
-                       left: 50;
                        z-index: 1;">
               </div>
         
@@ -297,104 +283,116 @@
                             Skills with Our Top-Rated Programs</h6>
 
                         <div class="row row-cols-1 row-cols-md-4 g-4">
-                            <div class="col">
-                                <div class="card cardCourse p-3 h-100">
-                                    <div class="cardImage"
-                                        style="background-image: url('static/images/2148784052.jpg');"></div>
-                                    <div class="card-body mt-4">
-                                        <h5 class="card-title">Course Name</h5>
-                                        <p class="card-text">
-                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
-                                            for those interested.
-                                        </p>
-                                        <a href="#" class="card-text text-center"
-                                            style="color: white; text-decoration: none;">Click to know more</a>
-                                    </div>
+                          <div class="col">
+                            <div class="card cardCourse p-3 h-100">
+                                <div class="cardImage" 
+                                    style="background-image: url('static/images/2148784052.jpg'); height: 200px; background-size: cover; background-position: center;">
+                                </div>
+                                <div class="card-body mt-4">
+                                    <h5 class="card-title">Course Name</h5>
+                                    <p class="card-text">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
+                                        for those interested.
+                                    </p>
+                                    <a href="#" class="click-to-know-more"><b>Click to know more</b></a>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card cardCourse p-3 h-100">
-                                    <div class="cardImage"
-                                        style="background-image: url('static/images/2148784052.jpg');"></div>
-                                    <div class="card-body mt-4">
-                                        <h5 class="card-title">Course Name</h5>
-                                        <p class="card-text">
-                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
-                                            for those interested.
-                                        </p>
-                                        <a href="#" class="card-text text-center"
-                                            style="color: white; text-decoration: none;">Click to know more</a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col">
+                          <div class="card cardCourse p-3 h-100">
+                              <div class="cardImage" 
+                                  style="background-image: url('static/images/2148784052.jpg'); height: 200px; background-size: cover; background-position: center;">
+                              </div>
+                              <div class="card-body mt-4">
+                                  <h5 class="card-title">Course Name</h5>
+                                  <p class="card-text">
+                                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
+                                      for those interested.
+                                  </p>
+                                  <a href="#" class="click-to-know-more"><b>Click to know more</b></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                        <div class="card cardCourse p-3 h-100">
+                            <div class="cardImage" 
+                                style="background-image: url('static/images/2148784052.jpg'); height: 200px; background-size: cover; background-position: center;">
                             </div>
-                            <div class="col">
-                                <div class="card cardCourse p-3 h-100">
-                                    <div class="cardImage"
-                                        style="background-image: url('static/images/2148784052.jpg');"></div>
-                                    <div class="card-body mt-4">
-                                        <h5 class="card-title">Course Name</h5>
-                                        <p class="card-text">
-                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
-                                            for those interested.
-                                        </p>
-                                        <a href="#" class="card-text text-center"
-                                            style="color: white; text-decoration: none;">Click to know more</a>
-                                    </div>
-                                </div>
+                            <div class="card-body mt-4">
+                                <h5 class="card-title">Course Name</h5>
+                                <p class="card-text">
+                                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
+                                    for those interested.
+                                </p>
+                                <a href="#" class="click-to-know-more"><b>Click to know more</b></a>
                             </div>
-                            <div class="col">
-                                <div class="card cardCourse p-3 h-100">
-                                    <div class="cardImage"
-                                        style="background-image: url('static/images/2148784052.jpg');"></div>
-                                    <div class="card-body mt-4">
-                                        <h5 class="card-title">Course Name</h5>
-                                        <p class="card-text">
-                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
-                                            for those interested.
-                                        </p>
-                                        <a href="#" class="card-text text-center"
-                                            style="color: white; text-decoration: none;">Click to know more</a>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="card cardCourse p-3 h-100">
+                          <div class="cardImage" 
+                              style="background-image: url('static/images/2148784052.jpg'); height: 200px; background-size: cover; background-position: center;">
+                          </div>
+                          <div class="card-body mt-4">
+                              <h5 class="card-title">Course Name</h5>
+                              <p class="card-text">
+                                  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
+                                  for those interested.
+                              </p>
+                              <a href="#" class="click-to-know-more"><b>Click to know more</b></a>
+                          </div>
+                      </div>
+                  </div>
                         </div>
 
                         <div class="mt-3">
-                            <button type="button" class="btn showBtn">Show More &#x2192</button><span
-                                class="fs-2 fw-bold" style="margin-left: 10px; color: rgba(12,51,74, 1)"></span>
+                          <button type="button" class="btn enrollBtn">Show more &nbsp;<span
+                            class="fw-bold"><i class='bx bx-right-arrow-alt'></i></span>
+                          </button>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
-      <section class="mb-5">
-        <div class="container-fluid">
-          <div class="card rounded-4 pt-5 pb-5 border-0" >
-        <div class="container" data-aos="fade-up" data-aos-duration="1000">
-
-          <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Our Clients</h2>
-          <h6 class="card-subtitle mt-3 mb-5 text-body-secondary" style="font-size: 18px;">Trusted by Industry Leaders Worldwide</h6>
-
-          <div class="owl-carousel owl-theme carousel-3">
-            <div class="item p-3">
-              <div class="card border-1" style="border-radius: 10px; border: 1px solid #0C334A;">
-                <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
+        <section class="mb-5">
+          <div class="container-fluid">
+            <div 
+              class="card rounded-4 pt-5 pb-5 border-0 position-relative"
+              style="overflow: hidden;">
+              <!-- Adding a pseudo-element for opacity control -->
+              <div 
+                class="background-overlay position-absolute w-100 h-100" 
+                style="
+                  background-image: url('static/images/element.JPG'); 
+                  background-repeat: repeat; 
+                  background-size: 40px 40px; 
+                  opacity: 0.1; 
+                  top: 0; 
+                  left: 0; 
+                  z-index: 0;">
+              </div>
+              <div class="container position-relative" data-aos="fade-up" data-aos-duration="1000" style="z-index: 1;">
+                <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Our Clients</h2>
+                <h6 class="card-subtitle mt-3 mb-5 text-body-secondary" style="font-size: 18px;">Trusted by Industry Leaders Worldwide</h6>
+        
+                <div class="owl-carousel owl-theme carousel-3">
+                  <div class="item p-3">
+                    <div class="card bg-transparent" style="border-radius: 10px; border: none;">
+                      <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
+                    </div>
+                  </div>
+                  <div class="item p-3">
+                    <div class="card bg-transparent" style="border-radius: 10px; border: none;">
+                      <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="item p-3">
-              <div class="card" style="border-radius: 10px; border: 1px solid #0C334A;">
-                <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
-              </div>
-            </div>
-
           </div>
-        </div>
-          </div>
-        </div>
-      </section>
-
+        </section>        
+        
       <section class="mt-5 mb-5">
         <div class="container-fluid" style="position: relative; overflow: hidden;">
 
@@ -405,8 +403,8 @@
             Your browser does not support the video tag.
           </video>
             <div class="container" data-aos="fade-up" data-aos-duration="1000">
-              <h2 class="card-title fw-bold" style="font-size: 38px; color: white ; text-align: left;">Join Our Team</h2>
-              <h3 class="card-subtitle mt-3 mb-5 text-body-secondary text-white" style="font-size: 18px; color: white; text-align: left;">Join. Grow. Succeed.</h3>
+              <h2 class="card-title fw-bold text-white" style="font-size: 38px; color: white ; text-align: left;">Join Our Team</h2>
+              <h3 class="card-subtitle mt-3 mb-5 text-white" style="font-size: 18px; color: white; text-align: left;">Join. Grow. Succeed.</h3>
               <br>
               <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col-md-4">
@@ -427,8 +425,9 @@
               </div>
       
               <div class="mt-3">
-                <button type="button" class="btn showBtn" style="background-color: #0C334A; color: white;">Show More &#x2192;</button>
-                <span class="fs-2 fw-bold" style="margin-left: 50px; color: #0C334A;"></span>
+                <button type="button" class="btn enrollBtn">Show more &nbsp;<span
+                  class="fw-bold"><i class='bx bx-right-arrow-alt'></i></span>
+                </button>
               </div>
             </div>
           </div>
@@ -659,54 +658,41 @@
         </div>
       </section>
 
-        <div class="container-fluid mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="card rounded-4 border-0">
-            <div class="container-fluid">
-              <div class="row row-cols-1 row-cols-md-2 g-0 p-5">
-                <div class="col-md-3 d-flex justify-content-center align-items-center">
-                  <div class="card  bg-transparent border-0">
-                    <div class="card-body">
-                      <h3 class="card-title" style="color: #0C334A">Internationally</h3>
-                      <h3 class="card-title" style="color: #0C334A">Accredited By</h3>
-                    </div>
+      <section class="mb-5">
+        <div class="container-fluid">
+          <div 
+            class="card rounded-4 pt-5 pb-5 border-0 position-relative"
+            style="overflow: hidden;">
+            <!-- Adding a pseudo-element for opacity control -->
+            <div 
+              class="background-overlay position-absolute w-100 h-100" 
+              style="
+                background-image: url('static/images/cardbg.png'); 
+                background-repeat: repeat; 
+                background-size: 30px 30px; 
+                opacity: 0.1; 
+                top: 0; 
+                left: 0; 
+                z-index: 0;">
+            </div>
+            <div class="container position-relative" data-aos="fade-up" data-aos-duration="1000" style="z-index: 1;">
+              <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Internationally Accredited By</h2>
+              <div class="owl-carousel owl-theme carousel-3">
+                <div class="item p-3">
+                  <div class="card bg-transparent" style="border-radius: 10px; border: none;">
+                    <div class="clientImage" style="background-image: url('static/images/9.webp');"></div>
                   </div>
                 </div>
-                <div class="col-md-9">
-                  <div class="card rounded-4 border-0">
-                    <div class="owl-carousel owl-theme carousel-1">
-                      <div class="item p-3">
-                        <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                          <img src="static/images/9.webp" class="card-img-top rounded-4 " alt="...">
-                        </div>
-                      </div>
-                      <div class="item p-3">
-                        <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                          <img src="static/images/9.webp" class="card-img-top rounded-4 " alt="...">
-                        </div>
-                      </div>
-                      <div class="item p-3">
-                        <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                          <img src="static/images/9.webp" class="card-img-top rounded-4 " alt="...">
-                        </div>
-                      </div>
-                      <div class="item p-3">
-                        <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                          <img src="static/images/9.webp" class="card-img-top rounded-4 " alt="...">
-                        </div>
-                      </div>
-                      <div class="item p-3">
-                        <div class="card rounded-4 border-0" style="border: 1px solid #75D457;">
-                          <img src="static/images/9.webp" class="card-img-top rounded-4 " alt="...">
-                        </div>
-                      </div>
-                    </div>
+                <div class="item p-3">
+                  <div class="card bg-transparent" style="border-radius: 10px; border: none;">
+                    <div class="clientImage" style="background-image: url('static/images/9.webp');"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+      </section>     
 
       <section>
         <div class="container-fluid position-relative">
@@ -785,94 +771,121 @@
 
       <section class="mt-5 mb-5">
         <div class="container-fluid">
-          <div class="card rounded-4 pt-5 pb-5 border-0" >
-        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card rounded-4 pt-5 pb-5 border-0">
+                <div class="container" data-aos="fade-up" data-aos-duration="1000">
 
-          <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Most Demanded Courses</h2>
-          <h6 class="card-subtitle mt-3 mb-5 text-body-secondary" style="font-size: 18px; ">Elevate Your Skills with Our Top-Rated Programs</h6>
+                    <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Most Demanded Courses
+                    </h2>
+                    <h6 class="card-subtitle mt-3 mb-5 text-body-secondary" style="font-size: 18px; ">Elevate Your
+                        Skills with Our Top-Rated Programs</h6>
 
-          <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card cardCourse p-3 h-100">
-                  <div class="cardImage" style="background-image: url('static/images/2148784052.jpg');"></div>
-                  <div class="card-body mt-4">
-                    <h5 class="card-title">Course Name</h5>
-                    <p class="card-text">
-                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    </p>
-                    <p href="#" class="card-text text-center" style="color: white;">Click to know more</p>
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                      <div class="col">
+                        <div class="card cardCourse p-3 h-100">
+                            <div class="cardImage" 
+                                style="background-image: url('static/images/2148784052.jpg'); height: 200px; background-size: cover; background-position: center;">
+                            </div>
+                            <div class="card-body mt-4">
+                                <h5 class="card-title">Course Name</h5>
+                                <p class="card-text">
+                                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
+                                    for those interested.
+                                </p>
+                                <a href="#" class="click-to-know-more"><b>Click to know more</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="card cardCourse p-3 h-100">
+                          <div class="cardImage" 
+                              style="background-image: url('static/images/2148784052.jpg'); height: 200px; background-size: cover; background-position: center;">
+                          </div>
+                          <div class="card-body mt-4">
+                              <h5 class="card-title">Course Name</h5>
+                              <p class="card-text">
+                                  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
+                                  for those interested.
+                              </p>
+                              <a href="#" class="click-to-know-more"><b>Click to know more</b></a>
+                          </div>
+                      </div>
                   </div>
+                  <div class="col">
+                    <div class="card cardCourse p-3 h-100">
+                        <div class="cardImage" 
+                            style="background-image: url('static/images/2148784052.jpg'); height: 200px; background-size: cover; background-position: center;">
+                        </div>
+                        <div class="card-body mt-4">
+                            <h5 class="card-title">Course Name</h5>
+                            <p class="card-text">
+                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
+                                for those interested.
+                            </p>
+                            <a href="#" class="click-to-know-more"><b>Click to know more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card cardCourse p-3 h-100">
+                      <div class="cardImage" 
+                          style="background-image: url('static/images/2148784052.jpg'); height: 200px; background-size: cover; background-position: center;">
+                      </div>
+                      <div class="card-body mt-4">
+                          <h5 class="card-title">Course Name</h5>
+                          <p class="card-text">
+                              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below
+                              for those interested.
+                          </p>
+                          <a href="#" class="click-to-know-more"><b>Click to know more</b></a>
+                      </div>
+                  </div>
+              </div>
+                    </div>
+
+                    <div class="mt-3">
+                      <button type="button" class="btn enrollBtn">Show more &nbsp;<span
+                        class="fw-bold"><i class='bx bx-right-arrow-alt'></i></span>
+                      </button>
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card cardCourse p-3 h-100">
-                  <div class="cardImage" style="background-image: url('static/images/2148784052.jpg');"></div>
-                  <div class="card-body mt-4">
-                    <h5 class="card-title">Course Name</h5>
-                    <p class="card-text">
-                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    </p>
-                    <p href="#" class="card-text text-center" style="color: white;">Click to know more</p>
-                  </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card cardCourse p-3 h-100">
-                  <div class="cardImage" style="background-image: url('static/images/2148784052.jpg');"></div>
-                  <div class="card-body mt-4">
-                    <h5 class="card-title">Course Name</h5>
-                    <p class="card-text">
-                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    </p>
-                    <p href="#" class="card-text text-center" style="color: white;">Click to know more</p>
-                  </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card cardCourse p-3 h-100">
-                  <div class="cardImage" style="background-image: url('static/images/2148784052.jpg');"></div>
-                  <div class="card-body mt-4">
-                    <h5 class="card-title">Course Name</h5>
-                    <p class="card-text">
-                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    </p>
-                    <p href="#" class="card-text text-center" style="color: white;">Click to know more</p>
-                  </div>
-                </div>
-            </div>
-          </div>
-
-          <div class="mt-3">
-            <button type="button" class="btn showBtn">Show More</button><span class="fs-2 fw-bold" style="margin-left: 10px; color: rgba(12,51,74, 1)">&#x2192;</span>
-          </div>
-
-         </div>
         </div>
-        </div>
-      </section>
+    </section>
 
     <section class="mb-5">
       <div class="container-fluid">
-        <div class="card rounded-4 pt-5 pb-5 border-0" >
-      <div class="container" data-aos="fade-up" data-aos-duration="1000">
-
-        <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Our Clients</h2>
-        <h6 class="card-subtitle mt-3 mb-5 text-body-secondary" style="font-size: 18px;">Trusted by Industry Leaders Worldwide</h6>
-
-        <div class="owl-carousel owl-theme carousel-3">
-          <div class="item p-3">
-            <div class="card border-1" style="border-radius: 10px; border: 1px solid #0C334A;">
-              <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
+        <div 
+          class="card rounded-4 pt-5 pb-5 border-0 position-relative"
+          style="overflow: hidden;">
+          <!-- Adding a pseudo-element for opacity control -->
+          <div 
+            class="background-overlay position-absolute w-100 h-100" 
+            style="
+              background-image: url('static/images/element.JPG'); 
+              background-repeat: repeat; 
+              background-size: 40px 40px; 
+              opacity: 0.1; 
+              top: 0; 
+              left: 0; 
+              z-index: 0;">
+          </div>
+          <div class="container position-relative" data-aos="fade-up" data-aos-duration="1000" style="z-index: 1;">
+            <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Our Clients</h2>
+            <h6 class="card-subtitle mt-3 mb-5 text-body-secondary" style="font-size: 18px;">Trusted by Industry Leaders Worldwide</h6>
+    
+            <div class="owl-carousel owl-theme carousel-3">
+              <div class="item p-3">
+                <div class="card bg-transparent" style="border-radius: 10px; border: none;">
+                  <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
+                </div>
+              </div>
+              <div class="item p-3">
+                <div class="card bg-transparent" style="border-radius: 10px; border: none;">
+                  <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="item p-3">
-            <div class="card" style="border-radius: 10px; border: 1px solid #0C334A;">
-              <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
         </div>
       </div>
     </section>
@@ -888,7 +901,7 @@
         </video>
           <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="card-title fw-bold" style="font-size: 38px; color: white ; text-align: left;">Join Our Team</h2>
-            <h3 class="card-subtitle mt-3 mb-5 text-body-secondary text-white" style="font-size: 18px; text-align: left; color: white;">Join. Grow. Succeed.</h3>
+            <h3 class="card-subtitle mt-3 mb-5 text-white" style="font-size: 18px; text-align: left; color: white;">Join. Grow. Succeed.</h3>
             <br>
             <div class="row row-cols-1 row-cols-md-2 g-4">
               <div class="col-md-4">
@@ -909,8 +922,9 @@
             </div>
     
             <div class="mt-3">
-              <button type="button" class="btn showBtn border-1" style="background-color: #0C334A; color: white;">Show More&#x2192;</button>
-              <span class="fs-2 fw-bold" style="margin-left: 50px; color: #0C334A;"></span>
+              <button type="button" class="btn enrollBtn">Show more &nbsp;<span
+                class="fw-bold"><i class='bx bx-right-arrow-alt'></i></span>
+              </button>
             </div>
           </div>
         </div>
@@ -1234,6 +1248,34 @@
                 opacity: 0;
             }
         }
-     
+        . {
+          width: 100px;
+          font-size: 15px;
+          padding: 10px;
+          transition: background-color 0.3s ease, color 0.3s ease;
+      }
+  
+      .custom-button:hover {
+          background-color: #007bff; /* Change to your desired hover background color */
+          color: #fff; /* Change text color on hover */
+          cursor: pointer; /* Add pointer cursor on hover */
+      }
+
+      .click-to-know-more {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        text-align: center;
+    }
+    
+    .click-to-know-more:hover {
+        color: #ffffff;
+        transform: translateY(-6px);
+        text-decoration: none;
+    }
+    
     </style>
 {% endblock %}

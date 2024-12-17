@@ -5,7 +5,7 @@
       <div class="container d-flex justify-content-end align-items-center">
         <ul class="list-styled mb-0" id="contact-info">
           <li>
-            <a href="#" class="text-align-center fw-bold top-bar-link" id="phone-number">
+            <a href="#" class="text-align-center fw-bold top-bar-link">
               <i class='bx bx-phone-call'></i> {{ phone }}
             </a>
           </li>
@@ -70,49 +70,15 @@
         </ul>
       </div>               
 
-      <!-- Country Dropdown -->
-      <div class="dropdown">
-        <button class="btn btn-secondary countryButton dropdown-toggle fw-bold border-1" type="button" 
-                data-bs-toggle="dropdown" aria-expanded="false" id="selected-country">
-          Canada
-        </button>
-        <ul class="dropdown-menu custom-dropdown-menu border-1">
-          <li>
-            <a class="dropdown-item fw-bold" href="#" onclick="selectCountry('Canada')">Canada</a>
-          </li>
-          <li>
-            <a class="dropdown-item fw-bold" href="#" onclick="selectCountry('UK')">UK</a>
-          </li>
-          <li>
-            <a class="dropdown-item fw-bold" href="#" onclick="selectCountry('Qatar')">Qatar</a>
-          </li>
-          <li>
-            <a class="dropdown-item fw-bold" href="#" onclick="selectCountry('India')">India</a>
-          </li>
-        </ul>
-      </div>
+      <!-- Country Dropdown Form -->
+      <form method="POST" action="/" class="d-flex">
+        <select name="country" class="form-select fw-bold custom-dropdown border-0" onchange="this.form.submit()">
+          <option value="Canada" {% if country == 'Canada' %}selected{% endif %}>Canada</option>
+          <option value="UK" {% if country == 'UK' %}selected{% endif %}>UK</option>
+          <option value="Qatar" {% if country == 'Qatar' %}selected{% endif %}>Qatar</option>
+          <option value="India" {% if country == 'India' %}selected{% endif %}>India</option>
+        </select>
+      </form>
     </div>
   </nav>
 </div>
- 
-<style>
-
-</style>
-
-<!-- JavaScript -->
-<script>
-  function selectCountry(country) {
-    fetch('/update_contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ country: country })
-    })
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('phone-number').innerHTML = 
-        `<i class='bx bx-phone-call'></i> ${data.phone}`;
-      document.getElementById('selected-country').textContent = data.country;
-    })
-    .catch(error => console.error('Error:', error));
-  }
-</script>
