@@ -145,13 +145,13 @@ body {
   width: 0;
   height: 2px;
   background-color: rgba(0, 0, 0, 0);
-  transform: translateY(-6px) rotateX(6deg) rotateY(6deg);
+  transform: scale(1.09);
 }
 
 .navTabs:hover {
   color: #dddddd !important;
   font-size: 16px;
-  transform: translateY(-6px) rotateX(6deg) rotateY(6deg);
+  transform: scale(1.09);
   padding: 0.75rem 1.5rem;
 }
 
@@ -171,35 +171,6 @@ body {
   border-radius: 10px;
   font-size: 12px;
 }
-
-/* Media Query for mobile responsiveness */
-@media only screen and (max-width: 355px) {
-  /* Hide regular nav items on small screens */
-  .nav-item:not(.dropdown) {
-    display: none;
-  }
-
-  /* Display dropdown on mobile */
-  .dropdown-menu {
-    background-color: #0C334A;
-  }
-
-  /* Ensure the dropdown items have proper spacing and styling */
-  .dropdown-menu .dropdown-item {
-    color: #ffffff;
-    padding: 12px 20px;
-    font-size: 14px;
-  }
-
-  .dropdown-menu .dropdown-item:hover {
-    background-color: #75D457;
-    color: #ffffff;
-  }
-
-  /* Optional: Adjust font size for dropdown menu items */
-  .dropdown-item {
-    font-size: 16px;
-  }
 
   /* Search box styling */
   .navItem1 {
@@ -280,16 +251,15 @@ body {
 .top-bar a:hover {
   color: #22dd67;
   /* Change color on hover */
-  transform: translateY(-6px) rotateX(6deg) rotateY(6deg);
+  transform: scale(1.09);
   /* Apply 3D effect on text */
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), 3px 3px 3 rgba(0, 0, 0, 0.2);
   /* Add shadow for 3D depth */
-  font-size: 16px;
 }
 
 /* Reset the 3D effect on click */
 .top-bar a:active {
-  transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  transform: scale(1.09);
   /* Reset transform when clicked */
   text-shadow: none;
   /* Remove shadow on click */
@@ -362,11 +332,11 @@ body {
 
 .nav.headerNav {
   margin-top: 5.2rem;
-  height: 75px;
+  height: 85px;
 }
 
 .nav.headerNav .nav-item {
-  margin: 10px;
+  margin: 22.8px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -651,7 +621,7 @@ div[role="progressbar"]::before {
   background: #ffffff;
   border-radius: 20px;
   top: 10px;
-  height: 33px;
+  height: 32px;
 }
 
 .searchInput {
@@ -716,7 +686,29 @@ div[role="progressbar"]::before {
 
 .custom-h4 {
   font-size: 15px;
-  text-align: center;
+  text-align: right;
+  position: relative;
+  /* Required for the pseudo-element */
+}
+
+.custom-h4::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  /* Adjust hover area above the text */
+  left: 0;
+  width: 100%;
+  height: 10px;
+  /* Height of the hoverable area */
+  background: transparent;
+  z-index: -1;
+  /* Ensures it doesn’t interfere visually */
+}
+
+.custom-h4:hover,
+.custom-h4::before:hover {
+  transform: scale(1.09);
+  color: #75D457 !important;
 }
 
 /* Custom styling for small screens */
@@ -870,20 +862,49 @@ h1 {
 /* Custom Dropdown */
 .custom-dropdown {
   border-radius: 10px;
-  overflow: hidden; /* Ensures border-radius applies */
+  overflow: hidden;
+  /* Ensures border-radius applies */
 }
 
 /* Dropdown menu items */
 .custom-dropdown option {
-  padding: 10px; /* Add some padding to dropdown options */
-  border-radius: 10px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+  padding: 10px;
+  /* Add some padding to dropdown options */
+  border-radius: 10px;
+  /* Rounded corners */
+  transition: background-color 0.3s ease;
+  /* Smooth hover effect */
 }
 
 /* Hover state for dropdown items */
 .custom-dropdown option:hover,
 .custom-dropdown option:focus {
   background-color: #0C334A;
-  color: #ffffff; /* Text color on hover */
+  color: #ffffff;
+  /* Text color on hover */
   cursor: pointer;
+}
+
+.icon-gif {
+  width: 38px;
+  /* Adjust the size of the GIF */
+  height: 38px;
+  /* Adjust the size of the GIF */
+  vertical-align: middle;
+  /* Aligns the GIF with the text */
+  margin-right: 5px;
+  /* Adds spacing between the GIF and text */
+}
+
+.custom-h4 {
+  font-size: 15px;
+  text-align: right;
+  position: relative;
+  /* Required for the pseudo-element */
+}
+
+.custom-h4:hover,
+.custom-h4::before:hover {
+  transform: scale(1.09);
+  color: #75D457 !important;
 }

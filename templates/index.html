@@ -13,20 +13,15 @@
   <li class="nav-item p-2" role="presentation">
     <p class="nav-link navTabs p-3" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">For Governments</p>
   </li>
-  
-  <!-- Dropdown for mobile view -->
-  <li class="nav-item dropdown ms-auto d-block d-md-none">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Menu
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <li><a class="dropdown-item" href="#" data-bs-toggle="tab" data-bs-target="#home-tab-pane">Individuals</a></li>
-      <li><a class="dropdown-item" href="#" data-bs-toggle="tab" data-bs-target="#profile-tab-pane">For Businesses</a></li>
-      <li><a class="dropdown-item" href="#" data-bs-toggle="tab" data-bs-target="#contact-tab-pane">For Governments</a></li>
-    </ul>
+  <li class="nav-item navItem1 p-3 ms-auto">
+    <div class="searchBox">
+      <input class="searchInput" type="text" name="" placeholder="Search">
+      <button class="searchButton" href="#">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
   </li>
 </ul>
-
 
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
@@ -43,7 +38,7 @@
                   </div>
                   <div class="gradient-overlay"></div>
                   <div class="carousel-caption-wrapper">
-                      <h4 class="fw-light text-white"><b>Internationally recognized training programs and short courses</b></h4>
+                      <h4 class="fw-light text-white"><b>Internationally recognized training programs and courses</b></h4>
                       <h1 class="lh-base heading-text">
                           Building Careers, Enhancing Skills: Discover Our Industry-Leading Programs
                       </h1>
@@ -65,7 +60,7 @@
                   </div>
                   <div class="gradient-overlay"></div>
                   <div class="carousel-caption-wrapper">
-                      <h4 class="fw-light text-white"><b>Internationally recognized training programs and short courses</b></h4>
+                      <h4 class="fw-light text-white"><b>Internationally recognized training programs and courses</b></h4>
                       <h1 class="lh-base heading-text">
                           Building Careers, Enhancing Skills: Discover Our Industry-Leading Programs
                       </h1>
@@ -95,7 +90,7 @@
         <div class="card rounded-4 pt-5 pb-5 border-0 mt-5 mb-5">
 
             <div class="container" data-aos="fade-up" data-aos-duration="1000">
-                <div class="owl-carousel owl-theme carousel-2">
+                <div class="owl-carousel owl-theme carousel-1">
                     <div class="item p-2">
                         <div class="card rounded-4 homeCard border-0"
                             style="background: linear-gradient(to bottom, #0e344b, white); background: linear-gradient(to top, #0e344b, white)">
@@ -182,7 +177,7 @@
         </div>
         <div class="container position-relative" data-aos="fade-up" data-aos-duration="1000" style="z-index: 1;">
           <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Internationally Accredited By</h2>
-          <div class="owl-carousel owl-theme carousel-3">
+          <div class="owl-carousel owl-theme carousel-2">
             <div class="item p-3">
               <div class="card bg-transparent" style="border-radius: 10px; border: none;">
                 <div class="clientImage" style="background-image: url('static/images/9.webp');"></div>
@@ -198,79 +193,81 @@
       </div>
     </div>
   </section>
-
-        <section>
-          <div class="container-fluid position-relative">
+  
+  <section>
+    <div class="container-fluid position-relative">
+      <!-- Content Section -->
+      <div class="card rounded-4 pt-5 pb-5 border-0 position-relative" 
+           style="background: #0C334A; z-index: 2;">
         
-            <!-- Content Section -->
-            <div class="card rounded-4 pt-5 pb-5 border-0 position-relative" 
-                 style="background: #0C334A; z-index: 2;">
-              
-              <!-- Background Image Layer - Set to Align with Left Container -->
-              <div 
-                class="bg-image-layer position-absolute w-100 h-100"
-                style="background-image: url('static/images/lloyds-bureau-logo-white.png'); 
-                       background-position: left; 
-                       background-size: contain ;
-                       background-repeat: no-repeat;
-                       opacity: 0.06; 
-                       top: 0;
-                       z-index: 1;">
-              </div>
-        
-              <div class="container">
-                <div 
-                  class="row row-cols-1 row-cols-md-2 g-4 p-4 align-items-stretch"
-                  data-aos="fade-up" 
-                  data-aos-duration="1000">
-        
-                  <!-- Left Container -->
-                  <div class="col d-flex">
-                    <div class="card bg-transparent border-0 text-white w-100">
-                      <div class="card-body d-flex flex-column">
-                        <h1 class="fw-bold mb-3" style="font-size: 40px;">Get to know us</h1>
-                        <p class="lh-lg" style="font-size: 15px;">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                          and scrambled it to make a type specimen book.
-                        </p>
-                        <br>
-                        <div class="">
-                          <a href="#" class="btn btn-light fw-bold rounded-10" style="border-radius: 10px; height: 40px; text-align: center;">Explore More</a>
-                        </div>                        
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Right Container -->
-                  <div class="col d-flex">
-                    <div class="card bg-transparent border-0 text-white w-100">
-                      <div class="card-body">
-                        <ul class="list-unstyled">
-                          <li class="pb-3 mt-3">
-                            <h4 class="custom-h4">Who we are</h4>
-                          </li>
-                          <li class="pb-3 mt-3">
-                            <h4 class="custom-h4">Our Quality Statement</h4>
-                          </li>
-                          <li class="pb-3 mt-3">
-                            <h4 class="custom-h4">Our Impartiality Statement</h4>
-                          </li>
-                          <li class="pb-3 mt-3">
-                            <h4 class="custom-h4">Our Commitments</h4>
-                          </li>
-                          <li class="pb-3 mt-3">
-                            <h4 class="custom-h4">Certification and Accreditations</h4>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+        <!-- Background Image Layer -->
+        <div 
+          class="bg-image-layer position-absolute w-100 h-100"
+          style="background-image: url('static/images/lloyds-bureau-logo-white.png'); 
+                 background-position: center; 
+                 background-size: contain;
+                 background-repeat: no-repeat;
+                 opacity: 0.06; 
+                 top: 0;
+                 z-index: 1;">
+        </div>
+  
+        <div class="container">
+          <div 
+            class="row row-cols-1 row-cols-md-2 g-4 p-4 align-items-stretch"
+            data-aos="fade-up" 
+            data-aos-duration="1000">
+            
+            <!-- Left Container -->
+            <div class="col d-flex">
+              <div class="card bg-transparent border-0 text-white w-100">
+                <div class="card-body d-flex flex-column">
+                  <h1 class="fw-bold mb-3" style="font-size: 40px;">Get to know us</h1>
+                  <p class="lh-lg" style="font-size: 15px;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                  </p>
+                  <br>
+                  <div>
+                    <a href="#" class="btn btn-light fw-bold rounded-10" 
+                       style="border-radius: 10px; height: 40px; text-align: center;">
+                      Explore More
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+  
+            <!-- Right Container -->
+            <div class="col d-flex">
+              <div class="card bg-transparent border-0 text-white w-100">
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li class="pb-3 mt-3">
+                      <h4 class="custom-h4">Who we are</h4>
+                    </li>
+                    <li class="pb-3 mt-3">
+                      <h4 class="custom-h4">Our Quality Statement</h4>
+                    </li>
+                    <li class="pb-3 mt-3">
+                      <h4 class="custom-h4">Our Impartiality Statement</h4>
+                    </li>
+                    <li class="pb-3 mt-3">
+                      <h4 class="custom-h4">Our Commitments</h4>
+                    </li>
+                    <li class="pb-3 mt-3">
+                      <h4 class="custom-h4">Certification and Accreditations</h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>             
+        </div>
+      </div>
+    </div>
+  </section>    
 
         <section class="mt-5 mb-5">
             <div class="container-fluid">
@@ -517,24 +514,28 @@
                     <h6 class="card-subtitle mt-3 mb-5 text-body-secondary" style="font-size: 18px;">Global Presence,
                         Local Expertise</h6>
 
-                    <!-- World map container -->
-                    <div class="map-container position-relative mx-auto" style="width: 100%; height: 100%;">
-                        <img src="static/images/maplocations.jpg" alt="World map" class="img-fluid rounded-3">
+                  <!-- World map container -->
+                  <div class="map-container position-relative mx-auto" style="width: 100%;">
+                    <img src="static/images/maplocations.jpg" alt="World map" class="img-fluid rounded-3">
 
-                        <!-- Location pins -->
-                        <div class="pin" style="top: 30%; left: 18%;">
-                            <span>CANADA</span>
-                        </div>
-                        <div class="pin" style="top: 34%; left: 47%;">
-                            <span>UK</span>
-                        </div>
-                        <div class="pin" style="top: 50%; left: 61%;">
-                            <span>QATAR</span>
-                        </div>
-                        <div class="pin" style="top: 54%; left: 68%;">
-                            <span>INDIA</span>
-                        </div>
+                      <!-- Location pins -->
+                      <div class="pin" style="top: 30%; left: 18%;">
+                        <span>CANADA
+                          <br>LLOYDS BUREAU
+                        <br>+1 (780) 228-9651</span>
                     </div>
+                    <div class="pin" style="top: 34%; left: 47%;">
+                        <span>UK</span>
+                    </div>
+                    <div class="pin" style="top: 50%; left: 61%;">
+                        <span>QATAR</span>
+                    </div>
+                    <div class="pin" style="top: 54%; left: 68%;">
+                        <span>INDIA
+                          <br>LB Certifications
+                        <br>+91 98765 43210</span>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>      
@@ -588,7 +589,7 @@
           <div class="card rounded-4 pt-5 pb-5 border-0 mt-5 mb-5">
 
               <div class="container" data-aos="fade-up" data-aos-duration="1000">
-                  <div class="owl-carousel owl-theme carousel-2">
+                  <div class="owl-carousel owl-theme carousel-1">
                       <div class="item p-2">
                           <div class="card rounded-4 homeCard border-0"
                               style="background: linear-gradient(to bottom, #0e344b, white); background: linear-gradient(to top, #0e344b, white)">
@@ -677,7 +678,7 @@
             </div>
             <div class="container position-relative" data-aos="fade-up" data-aos-duration="1000" style="z-index: 1;">
               <h2 class="card-title fw-bold" style="font-size: 38px; color: #0C334A;">Internationally Accredited By</h2>
-              <div class="owl-carousel owl-theme carousel-3">
+              <div class="owl-carousel owl-theme carousel-2">
                 <div class="item p-3">
                   <div class="card bg-transparent" style="border-radius: 10px; border: none;">
                     <div class="clientImage" style="background-image: url('static/images/9.webp');"></div>
@@ -696,21 +697,19 @@
 
       <section>
         <div class="container-fluid position-relative">
-      
           <!-- Content Section -->
           <div class="card rounded-4 pt-5 pb-5 border-0 position-relative" 
                style="background: #0C334A; z-index: 2;">
             
-            <!-- Background Image Layer - Set to Align with Left Container -->
+            <!-- Background Image Layer -->
             <div 
               class="bg-image-layer position-absolute w-100 h-100"
               style="background-image: url('static/images/lloyds-bureau-logo-white.png'); 
-                     background-position: left; 
-                     background-size: contain ;
+                     background-position: center; 
+                     background-size: contain;
                      background-repeat: no-repeat;
                      opacity: 0.06; 
                      top: 0;
-                     left: 50;
                      z-index: 1;">
             </div>
       
@@ -719,7 +718,7 @@
                 class="row row-cols-1 row-cols-md-2 g-4 p-4 align-items-stretch"
                 data-aos="fade-up" 
                 data-aos-duration="1000">
-      
+                
                 <!-- Left Container -->
                 <div class="col d-flex">
                   <div class="card bg-transparent border-0 text-white w-100">
@@ -731,8 +730,11 @@
                         and scrambled it to make a type specimen book.
                       </p>
                       <br>
-                      <div class="explore-button">
-                        <button class="btn btn-light fw-bold rounded-10" style="border-radius: 10px; height: 40px; text-align: center;">Explore More</button>
+                      <div>
+                        <a href="#" class="btn btn-light fw-bold rounded-10" 
+                           style="border-radius: 10px; height: 40px; text-align: center;">
+                          Explore More
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -762,7 +764,6 @@
                     </div>
                   </div>
                 </div>
-      
               </div>
             </div>
           </div>
@@ -1020,7 +1021,9 @@
 
                       <!-- Location pins -->
                       <div class="pin" style="top: 30%; left: 18%;">
-                          <span>CANADA</span>
+                          <span>CANADA
+                            <br>LLOYDS BUREAU
+                          <br>+1 (780) 228-9651</span>
                       </div>
                       <div class="pin" style="top: 34%; left: 47%;">
                           <span>UK</span>
@@ -1029,7 +1032,9 @@
                           <span>QATAR</span>
                       </div>
                       <div class="pin" style="top: 54%; left: 68%;">
-                          <span>INDIA</span>
+                          <span>INDIA
+                            <br>LB Certifications
+                          <br>+91 98765 43210</span>
                       </div>
                   </div>
               </div>
@@ -1223,11 +1228,11 @@
             display: none;
             white-space: nowrap;
             position: absolute;
-            right: 1.5rem;
+            bottom: 0.8rem;
             transform: translateY(-50%);
             background: white;
-            padding: 0.3em 0.6rem;
-            font-size: 1.1rem;
+            padding: 0.3em 0.3rem;
+            font-size: 0.8rem;
             font-weight: bold;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
             border-radius: 5px;
@@ -1276,6 +1281,16 @@
         transform: translateY(-6px);
         text-decoration: none;
     }
-    
+    .custom-h4 {
+      font-size: 15px;
+      text-align: right;
+      position: relative; /* Required for the pseudo-element */
+    }
+  
+    .custom-h4:hover,
+    .custom-h4::before:hover {
+      transform: scale(1.09);
+      color: #75D457 !important;
+    }
     </style>
 {% endblock %}

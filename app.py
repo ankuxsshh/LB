@@ -27,8 +27,8 @@ def set_phone_number():
         g.phone = get_phone_number(g.selected_country)
 
 @app.route("/", methods=["GET", "POST"])
-def home():
-    return render_template('home.html', country=g.selected_country, phone=g.phone)
+def index():
+    return render_template('index.html', country=g.selected_country, phone=g.phone)
 
 @app.route("/about-us")
 def about():
