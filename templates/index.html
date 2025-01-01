@@ -1098,24 +1098,51 @@
 
 
     <style>
-        /* Custom card styling */
-        .custom-card {
-            margin-top: 30px;
-            background-color: #0C334A;
-            border-radius: 10px;
-            height: 350px;
-            width: 172px;
-            padding: 35px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+/* Custom card styling */
+.custom-card {
+  margin-top: 30px;
+  background-color: #0C334A;
+  border-radius: 10px;
+  height: 350px;
+  width: 172px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-        .custom-card .card-content {
-            color: white;
-            font-size: 14px;
-            text-align: center;
-        }
+.custom-card .card-content {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .custom-card {
+      width: 100%;  /* Full width for smaller screens */
+      height: auto; /* Adjust height for mobile screens */
+      padding: 20px; /* Less padding for smaller screens */
+      margin-top: 20px; /* Adjust margin */
+  }
+
+  .row {
+      justify-content: center; /* Align cards to the center */
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+      width: 100%;  /* Full width for medium-sized screens */
+      padding: 25px; /* Adjust padding for medium screens */
+      height: auto; /* Adjust height for mobile screens */
+  }
+
+  .row {
+      justify-content: center; /* Align cards to the center */
+  }
+}
+
 
         .indicator {
             position: relative;
@@ -1292,5 +1319,61 @@
       transform: scale(1.09);
       color: #75D457 !important;
     }
+    /* For screens smaller than or equal to 576px (Mobile Portrait) */
+@media (max-width: 576px) {
+  .container.mb-5 {
+      padding: 0;
+  }
+
+  .card.border-0 {
+      border-radius: 10px;
+      height: auto;
+      padding: 10px;
+  }
+
+  .row.g-0 {
+      flex-direction: column; /* Stack the columns vertically */
+      align-items: center;
+  }
+
+  .col {
+      width: 100%; /* Make each column take full width */
+      margin-bottom: 10px; /* Add some spacing between the items */
+  }
+
+  .card-content {
+      font-size: 16px; /* Adjust font size for readability */
+      text-align: center; /* Ensure text is centered */
+  }
+}
+
+/* For screens between 576px and 768px (Mobile Landscape and small Tablets) */
+@media (max-width: 768px) {
+  .container.mb-5 {
+      padding: 0;
+  }
+
+  .card.border-0 {
+      border-radius: 10px;
+      height: auto;
+      padding: 10px;
+  }
+
+  .row.g-0 {
+      flex-direction: column; /* Stack the columns vertically */
+      align-items: center;
+  }
+
+  .col {
+      width: 100%; /* Make each column take full width */
+      margin-bottom: 10px; /* Add some spacing between the items */
+  }
+
+  .card-content {
+      font-size: 18px; /* Adjust font size for readability */
+      text-align: center; /* Ensure text is centered */
+  }
+}
+
     </style>
 {% endblock %}

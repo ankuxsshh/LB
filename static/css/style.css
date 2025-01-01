@@ -172,37 +172,6 @@ body {
   font-size: 12px;
 }
 
-  /* Search box styling */
-  .navItem1 {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .searchBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .searchInput {
-    padding: 5px;
-    margin-right: 5px;
-    width: 60%;
-  }
-
-  .searchButton {
-    background: transparent;
-    border: none;
-    color: #fff;
-  }
-
-  .searchButton i {
-    font-size: 18px;
-  }
-}
-
 @media only screen and (min-width: 601px) {
   .dropdown-menu {
     display: none;
